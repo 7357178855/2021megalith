@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,63 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <header></header>
+    <div class="mainbox">
+        <div class="text">
+            <br>
+            <h2>
+                WELCOME TO OUR REGISTRATION WEBSITE.
+
+            </h2>
+            <p>
+                <br>
+                Sign Up for <span style="font-weight: bold; ">free!</span>
+            </p>
+            <form action="index.php" method="post">
+                <p><input type="text" name="name" size="50" class="options style= " id="name"
+                        placeholder="Enter Your Full Name" required=""></p>
+                <p><input type="email" name="email" size="50" class="options " id="email" placeholder="abc@example.com"
+                        required=""></p>
+                <p><select name="gender" class="options" id="gender">
+                    <option value="select">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Prefer Not to Say">Prefer Not to Say</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </p>
+                <p><input type="text" name="password" size="50" class="options style= " id="password"
+                    placeholder="Enter Your Password" required=""></p>
+                    <p><input type="text" name="confirmpassword" size="50" class="options style= " id="confirmpassword"
+                        placeholder="Confirm Pasword" required=""></p>
+
+                <p><input type="number" name="phoneno" class="options " id="phoneno" placeholder="Enter Your Phone no"
+                        required=""></p>
+                <p><input type="text" name="college" size="50" class="options style= " id="college"
+                        placeholder="Enter Your College" required=""></p>
+                        <p><select name="year" class="options" id="year">
+                            <option value="select">Select Year of Study</option>
+                            </select>
+                        </p>
+                <p><select name="country" class="options" id="country">
+                    <option value="select">Select Country</option>
+                    </select>
+                </p>
+                <p><select name="state" class="options" id="state">
+                    <option value="select">Select State</option>
+                </select>
+            </p>
+            <p><select name="city" class="options" id="city">
+                <option value="select">Select City</option>
+            </select>
+                </p>
+                <button class="button">SIGN UP</button>
+            </form>
+        </div>
+
+    </div>
+
 </body>
+
 </html>
