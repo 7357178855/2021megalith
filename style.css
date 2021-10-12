@@ -1,9 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+
     /* box-sizing: border-box; */
 }
-body{
+html{
+    scroll-behavior: smooth;
+}
+/* body{
     height:auto;
     width: 100%;
     display: flex;
@@ -11,22 +15,53 @@ body{
     align-items: center;
     flex-direction: column;
     font-family: sans-serif;
-}
-header{
+} */
+/* header{
     width: 100%;
     height: auto;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(201, 123, 5);
+} */
 
 .headercontainer{
-    width: 100%;
-    height: 80px;
-    background-color: rgb(201, 123, 5);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      height: 80px;
+       background-color: rgb(201, 123, 5);
 }
- h1{
-    background: linear-gradient(to right,rgb(4, 14, 105), rgba(6, 75, 139, 0.651));
+.headercontainer a{
+    text-decoration: none;
+    font-size: 25px;
+}
+ .Sign-up-box h1{
+        background: linear-gradient(to bottom,rgb(4, 14, 105), rgba(6, 75, 139, 0.651));
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
 }
+.Sign-up-box h1 span{
+   font-size: 40px;
+/* background: linear-gradient(to bottom,rgb(4, 14, 105), rgba(6, 75, 139, 0.651));
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text; */
+}
+.Sign-in-box h1{
+    background: linear-gradient(to right,rgb(4, 14, 105), rgba(6, 75, 139, 0.651));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.hero h1{
+    background: linear-gradient(to right,rgb(137, 222, 233), rgba(9, 179, 142, 0.651));
+    -webkit-text-fill-color: transparent;
+    opacity: 0.5;
+    -webkit-background-clip: text;
+}
+
 button{
     width: 100px;
     height: 35px;
@@ -54,6 +89,7 @@ filter: hue-rotate(190deg);
     height: auto;
     width: 50%;
     display: flex;
+    margin: auto;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
@@ -73,6 +109,7 @@ filter: hue-rotate(190deg);
     height: auto;
     width: 50%;
     display: flex;
+    margin: auto;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
@@ -162,4 +199,81 @@ footer a{
     padding: 10px;
     justify-content: space-between;
     align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to left, #ba7453, #d1a984);
+    z-index: -1;
+}
+nav{
+    display: flex;
+    padding: 10px 20px 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    color: wheat;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(4, 146, 151);
+    font-size: 35px;
+}
+#logo{
+    grid-column: 2/3;
+    font-size: 24px;
+
+}
+.hamburger{
+    justify-self: end;
+}
+section{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+.hero{
+    height: 60%;
+    width: 80%;
+    position: relative;
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.headline{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    font-size: 50px;
+    transform: translate(-18%, -40%);
+    background: linear-gradient(toleft, violet,indigo);
+    z-index: 1;
+}
+.hero::after{
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
 }
