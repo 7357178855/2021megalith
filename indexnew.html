@@ -1,128 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Apple Dev Ed Pro</title>
 </head>
+
 <body>
+  <div class="intro">
     <header>
-        <nav>
-            <h3 id="logo"><a href="">Megalith 2022</a></h3>
-            <a href=""><img src="images/hamburger3.jpg" width="35px" alt="hamburger">
-            </a>
-        </nav>
-        <section>
-            <div class="hero">
-                <img src="/courses-p1-c0b650de482551e926ba084d942a1ebdebd454b9c8e0be0b974ad61fcfe65c7f.jpg" alt="">
-                <h1 class="headline">Megalith 2022</h1>
-            </div>
-        </section>
+      <nav>
+        <h3 id="logo"><a href="">Megalith 2022</a></h3>
+        <a href=""><img src="images/hamburger3.jpg" width="35px" alt="hamburger">
+        </a>
+      </nav>
+      <section>
+        <div class="hero">
+          <img src="/courses-p1-c0b650de482551e926ba084d942a1ebdebd454b9c8e0be0b974ad61fcfe65c7f.jpg" alt="">
+          <h1 class="headline">Megalith 2022</h1>
+        </div>
+      </section>
     </header>
     <div class="slider"></div>
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="app.js"></script>
-    <!-- <header>
-        <div class="headercontainer">
-            <a href="">Megalith 2022</a>
-            <a href=""><img src="images/hamburger.jpg" width="35px" alt=""></a>
-        </div>
-    </header> -->
-    <br><br><br><br><br>
+    <br><br><br><b><br></b>
+    <div class="cr-registration">
+      <h1>CR Registration</h1>
+      <div class="registration-options">
+        <button class="reg-option-1" onclick="choose()">Sign-Up</button>
+        <button class="reg-option-2" onclick="">Sign-In</button>
+      </div>
+    </div>
     <div class="Sign-up-box">
-    <h1><span>S</span><span>i</span><span>g</span><span>n</span><span>-</span><span>U</span><span>p</span>
-    </h1>
-    <div class="form">
-        <input type="text " name="name" autocomplete="off" required />
+      <div class="form">
+        <input type="text " name="name" autocomplete="off" required>
         <label for="name" class="label-name">
-            <span class="content-name">Full name</span>
+          <span class="content-name">Full name</span>
         </label>
-    </div>
-    <div class="form">
-        <input type="text " name="mail" autocomplete="off" required />
+      </div>
+      <div class="form">
+        <input type="text " name="mail" autocomplete="off" required>
         <label for="name" class="label-name">
-            <span class="content-name">E-Mail</span>
+          <span class="content-name">E-Mail</span>
         </label>
-    </div>
-    <div class="form">
-        <input type="text " name="Password" autocomplete="off" required />
+      </div>
+      <div class="form">
+        <input type="text " name="Password" autocomplete="off" required>
         <label for="name" class="label-name">
-            <span class="content-name">Password</span>
+          <span class="content-name">Password</span>
         </label>
-    </div>
-    <div class="form">
-        <input type="text " name="Confirm Password" autocomplete="off" required />
+      </div>
+      <div class="form">
+        <input type="text " name="Confirm Password" autocomplete="off" required>
         <label for="name" class="label-name">
-            <span class="content-name">Confirm Password</span>
+          <span class="content-name">Confirm Password</span>
         </label>
-    </div>
-    <div class="form">
-        <input type="number " name="Mobile No." autocomplete="off" required />
+      </div>
+      <div class="form">
+        <input type="number " name="Mobile No." autocomplete="off" required>
         <label for="name" class="label-name">
-            <span class="content-name">Mobile No.</span>
+          <span class="content-name">Mobile No.</span>
         </label>
-    </div>
-    <div class="form">
-        <input type="text" name="College" autocomplete="off" required />
+      </div>
+      <div class="form">
+        <input type="text" name="College" autocomplete="off" required>
         <label for="name" class="label-name">
-            <span class="content-name">College</span>
+          <span class="content-name">College</span>
         </label>
-    </div>
-    <div class="form">
-        <input type="text " name="Country" autocomplete="off" required />
+      </div>
+      <div class="form">
+        <input type="text " name="Country" autocomplete="off" required>
         <label for="name" class="label-name">
-            <span class="content-name">Country</span>
+          <span class="content-name">Country</span>
         </label>
-    </div>
-    <div class="form">
-        <input type="text" name="State" autocomplete="off" required />
+      </div>
+      <div class="form">
+        <input type="text" name="State" autocomplete="off" required>
         <label for="name" class="label-name">
-            <span class="content-name">State</span>
+          <span class="content-name">State</span>
         </label>
-    </div>
-    <div class="form">
-        <input type="text" name="City" autocomplete="off" required />
+      </div>
+      <div class="form">
+        <input type="text" name="City" autocomplete="off" required>
         <label for="name" class="label-name">
-            <span class="content-name">City</span>
+          <span class="content-name">City</span>
         </label>
-    </div>
-    <button>Register</button>
+      </div>
+      <div class="gender-details">
+        <input type="radio" name="gender" id="dot-1">
+        <input type="radio" name="gender" id="dot-2">
+        <input type="radio" name="gender" id="dot-3">
+        <span class="gender-title">Gender</span>
+        <div class="gender-category">
+          <label for="dot-1">
+            <span class="dot-one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot-two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot-three"></span>
+            <span class="gender">Prefer not to say</span>
+          </label>
+        </div>
+      </div>
+      <div class="year-details">
+        <input type="radio" name="year" id="yeardot-1">
+        <input type="radio" name="year" id="yeardot-2">
+        <input type="radio" name="year" id="yeardot-3">
+        <input type="radio" name="year" id="yeardot-4">
+        <input type="radio" name="year" id="yeardot-5">
+        <input type="radio" name="year" id="yeardot-6">
+
+        <span class="year-title">Year of Study</span>
+        <div class="year-category">
+          <label for="yeardot-1">
+            <span class="yeardot-one"></span>
+            <span class="year">1st Year</span>
+          </label>
+          <label for="yeardot-2">
+            <span class="yeardot-two"></span>
+            <span class="year">2nd Year</span>
+          </label>
+          <label for="yeardot-3">
+            <span class="yeardot-three"></span>
+            <span class="year">3rd Year</span>
+          </label>
+          <label for="yeardot-4">
+            <span class="yeardot-four"></span>
+            <span class="year">4rth Year</span>
+          </label>
+          <label for="yeardot-5">
+            <span class="yeardot-five"></span>
+            <span class="year">5th Year</span>
+          </label>
+          <label for="yeardot-6">
+            <span class="yeardot-six"></span>
+            <span class="year">None</span>
+          </label>
+        </div>
+      </div>
+      <div class="megalith-details">
+        <input type="radio" name="megalith" id="megalithdot-1">
+        <input type="radio" name="megalith" id="megalithdot-2">
+        <span class="megalith-title">Where you part of Megalith?</span>
+        <div class="megalith-category">
+          <label for="megalithdot-1">
+            <span class="megalithdot-one"></span>
+            <span class="megalith">Yes</span>
+          </label>
+          <label for="megalithdot-2">
+            <span class="megalithdot-two"></span>
+            <span class="megalith">No</span>
+          </label>
+        </div>
+      </div>
+      <div class="register-button">
+        <input type="submit" value="Register">
+      </div>
     </div>
     <br><br><br>
     <div class="Sign-in-box">
-        <h1>Sign-in
-        </h1>
-        <div class="form">
-            <input type="text " name="mail" autocomplete="off" required />
-            <label for="name" class="label-name">
-                <span class="content-name">Email</span>
-            </label>
-        </div>
-        <div class="form">
-            <input type="text " name="password" autocomplete="off" required />
-            <label for="name" class="label-name">
-                <span class="content-name">Password</span>
-            </label>
-        </div>
-        <button>Sign-in</button>
-        </div><br><br>
+      <div class="form">
+        <input type="text " name="mail" autocomplete="off" required>
+        <label for="name" class="label-name">
+          <span class="content-name">Email</span>
+        </label>
+      </div>
+      <div class="form">
+        <input type="text " name="password" autocomplete="off" required>
+        <label for="name" class="label-name">
+          <span class="content-name">Password</span>
+        </label>
+      </div>
+      <div class="sign-in-button">
+        <input type="submit" value="sign-in">
+      </div>
+    </div><br><br>
+
+
     <footer>
-        <div class="footercontainer">
-            <div class="linkflex">
-                <div>
+      <div class="footercontainer">
+        <div class="linkflex">
+          <div>
             <a href="">Megalith 2022</a>
             <p>Department of Civil Engineering, IIT Kharagpur, West Bengal - 721302</p>
-           </div>
-            <div class="totop">
-                <a href="#logo"><img src="images/arrow.jpg" width="35px" alt=""></a>
-            </div>
-            </div>
+          </div>
+          <div class="totop">
+            <a href="#logo">^</a>
+          </div>
         </div>
+      </div>
     </footer>
+
+
+    <video src="AbstractRotatingCubesVidevo.mov"></video>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+    integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"
+    integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"
+    integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>
