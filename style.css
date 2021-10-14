@@ -33,7 +33,7 @@
     justify-content: space-around;
     align-items: center;
   }
-  .registration-options button{
+  .reg-option-1{
     width: 48%;
     height: 40px;
     font-size: 18px;
@@ -42,21 +42,20 @@
     border-radius: 5px;
     font-weight: bold;
     border: none;
-    border-bottom: 5px solid grey;
+    border-bottom: 5px solid rgb(133, 133, 133);
     background-color: rgba(255, 228, 196, 0);
   }
-  .Sign-up-box h1{
-        background: linear-gradient(to bottom,rgb(4, 14, 105), rgba(6, 75, 139, 0.651));
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-  }
-  .Sign-up-box h1 span{
-   font-size: 40px;
-  }
-  .Sign-in-box h1{
-    background: linear-gradient(to right,rgb(4, 14, 105), rgba(6, 75, 139, 0.651));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+  .reg-option-2{
+    width: 48%;
+    height: 40px;
+    font-size: 18px;
+    bottom: 0;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    border-bottom: 5px solid rgb(133, 133, 133);
+    background-color: rgba(255, 228, 196, 0);
   }
   .hero h1{
     background: linear-gradient(to right,rgb(137, 222, 233), rgba(9, 179, 142, 0.651));
@@ -69,6 +68,7 @@
     width: 60%;
     display: flex;
     margin: auto;
+    padding-top: 10px;
     z-index: 1;
     justify-content: space-around;
     align-items: center;
@@ -78,16 +78,21 @@
     z-index: 3;
   }
   .Sign-in-box{
-    height: auto;
+    height: 0;
+    padding-top: 10px;
+    position: relative;
+    top: 0%;
+    margin-top: 0%;
     width: 60%;
     display: flex;
     margin: auto;
     justify-content: space-around;
+    visibility: hidden;
     align-items: center;
     flex-direction: column;
     font-family: sans-serif;
     background: linear-gradient(to left, #07c98fb0, #4db9cc48);
-    z-index: 3;
+    z-index: 1;
   }
   .form{
     width: 80%;
@@ -214,7 +219,7 @@
     border: none;
     outline: none;
     background: linear-gradient(to left, #07c98f11, #4db9cce1,);
-    opacity: 0;
+    opacity: 0.5;
   }
   .form label{
     position: absolute;

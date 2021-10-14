@@ -38,7 +38,6 @@ let scene = new ScrollMagic.Scene({
   triggerHook: 0.5
 })
   .addIndicators()
-
   .addTo(controller);
 
 //Text Animation
@@ -67,3 +66,40 @@ setInterval(() => {
 
   video.currentTime = scrollpos;
 }, 33.3);
+
+
+
+
+let choosesignup = function() {
+    let getcontentsignup = document.querySelector(".Sign-up-box");
+    let getcontentsignin = document.querySelector(".Sign-in-box");
+
+    getcontentsignup.style.visibility="visible";
+    getcontentsignup.style.height="auto";
+    getcontentsignin.style.visibility="hidden"
+    getcontentsignin.style.height="0";
+    // getcontentsignup.style.visibility="hidden";
+    // getcontentsignup.style.height="0";
+    // getcontentsignin.style.visibility="visible"
+    // getcontentsignin.style.height="auto";
+  
+  }
+  
+let choosesignin = function() {
+  let getcontentsignup = document.querySelector(".Sign-up-box");
+  let getcontentsignin = document.querySelector(".Sign-in-box");
+  let getcontentregoption2= document.querySelector(".reg-option-2");
+
+  getcontentsignup.style.visibility="hidden";
+  getcontentsignup.style.height="0";
+  getcontentsignin.style.visibility="visible"
+  getcontentsignin.style.height="auto";
+  getcontentsignin.style.transform="translatey(-10px)";
+
+
+  // getcontentsignup.style.visibility="hidden";
+  // getcontentsignup.style.height="0";
+  // getcontentsignin.style.visibility="visible"
+  // getcontentsignin.style.height="auto";
+
+}
