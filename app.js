@@ -1,11 +1,11 @@
+
+                       // starter animation started
 const hero = document.querySelector(".hero");
 const slider = document.querySelector(".slider");
 const logo = document.querySelector("#logo");
 const hamburger = document.querySelector(".hamburger");
 const headline = document.querySelector(".headline");
-
 const tl = new TimelineMax();
-
 tl.fromTo(hero, 1, { height: "0%"}, { height: "80%", ease: Power2.easeInOut })
 .fromTo(
     hero,
@@ -17,10 +17,13 @@ tl.fromTo(hero, 1, { height: "0%"}, { height: "80%", ease: Power2.easeInOut })
     slider,
     1.2, 
     { x: "-100%" }, 
-    { x: "0%", ease: Power2.easeInOut }, 
+    { x: "0%", ease: Power2.easeInOut },     
+    
     "-=1.2")
 
 
+
+                          //video animation started
 const intro = document.querySelector(".intro");
 const video = intro.querySelector("video");
 const text = intro.querySelector("h1");
@@ -63,13 +66,12 @@ scene.on("update", e => {
 setInterval(() => {
   delay += (scrollpos - delay) * accelamount;
   console.log(scrollpos, delay);
-
   video.currentTime = scrollpos;
 }, 33.3);
 
 
 
-
+                      //signUP signIn button functions
 let choosesignup = function() {
     let getcontentsignup = document.querySelector(".Sign-up-box");
     let getcontentsignin = document.querySelector(".Sign-in-box");
@@ -78,11 +80,6 @@ let choosesignup = function() {
     getcontentsignup.style.height="auto";
     getcontentsignin.style.visibility="hidden"
     getcontentsignin.style.height="0";
-    // getcontentsignup.style.visibility="hidden";
-    // getcontentsignup.style.height="0";
-    // getcontentsignin.style.visibility="visible"
-    // getcontentsignin.style.height="auto";
-  
   }
   
 let choosesignin = function() {
@@ -95,11 +92,4 @@ let choosesignin = function() {
   getcontentsignin.style.visibility="visible"
   getcontentsignin.style.height="auto";
   getcontentsignin.style.transform="translatey(-10px)";
-
-
-  // getcontentsignup.style.visibility="hidden";
-  // getcontentsignup.style.height="0";
-  // getcontentsignin.style.visibility="visible"
-  // getcontentsignin.style.height="auto";
-
 }
